@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AR Butter Chicken</title>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      background: #f8f8f8;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    model-viewer {
+      width: 100%;
+      height: 100%;
+      max-width: 600px;
+      max-height: 600px;
+    }
+  </style>
+</head>
+<body>
+  <model-viewer 
+    src="butter_chicken.glb" 
+    alt="Butter Chicken Dish"
+    ar 
+    ar-modes="scene-viewer quick-look webxr"
+    camera-controls 
+    auto-rotate 
+    shadow-intensity="1">
+  </model-viewer>
+</body>
+</html>
